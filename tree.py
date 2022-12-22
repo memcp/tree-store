@@ -15,7 +15,10 @@ class TreeStore:
     def get_item(self, id):
         """Получение элементов из расчета изначальный список отсортирован и значения
         id элементов последовательны"""
-        return self.items[id - 1]
+        try:
+            return self.items[id - 1]
+        except IndexError:
+            print(f"Index {id} is out of range")
 
     def get_children(self, id):
         """Возвращает список всех дочерних элементов, являющихся дочерними для элемента
