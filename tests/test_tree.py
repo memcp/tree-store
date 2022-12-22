@@ -13,7 +13,7 @@ def items():
         {"id": 5, "parent": 2, "type": "test"},
         {"id": 6, "parent": 2, "type": "test"},
         {"id": 7, "parent": 4, "type": None},
-        {"id": 8, "parent": 4, "type": None}
+        {"id": 8, "parent": 4, "type": None},
     ]
 
 
